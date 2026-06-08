@@ -4,6 +4,9 @@ This repository contains the portfolio homepage and supporting static files.
 
 ## Contents
 
+- `style.css` — page styles
+
+
 - `script.js` — optional interactivity
 
 
