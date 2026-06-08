@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Indushree S Achar – AI Enthusiast, Web Developer, and Data Science Learner. Explore my projects, skills, and journey in tech." />
+  <title>Indushree S Achar | AI & Web Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mouse Glow -->
+  <div id="mouse-glow"></div>
+
+  <!-- Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Indushree<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link" data-label="Home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-label="About">About</a></li>
+        <li><a href="#skills" class="nav-link" data-label="Skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-label="Projects">Projects</a></li>
+        <li><a href="#certificates" class="nav-link" data-label="Certs">Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-label="Contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <div class="hero-greeting">
+          <span class="greeting-dot"></span>
+          <span>Hello, World! 👋</span>
+        </div>
+        <h1 class="hero-name">Indushree<br/><span class="name-accent">S Achar</span></h1>
+        <div class="hero-tagline">
+          <span class="static-text">I am an&nbsp;</span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-description">
+          Crafting intelligent solutions at the intersection of AI, Web, and Data. 
+          Turning ideas into impactful digital experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="Indushree_Updated_Resume.pdf" class="btn btn-outline" id="cta-resume" download="Indushree_S_Achar_Resume.pdf">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://linkedin.com" target="_blank" class="social-link" id="hero-linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" target="_blank" class="social-link" id="hero-github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:indushree@email.com" class="social-link" id="hero-email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="avatar-container">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <img src="images/my_photo.jpeg" alt="Indushree S Achar – AI Developer" class="avatar-img" id="hero-avatar" />
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge badge-ai">
+            <i class="fas fa-brain"></i> AI
+          </div>
+          <div class="float-badge badge-web">
+            <i class="fas fa-code"></i> Web
+          </div>
+          <div class="float-badge badge-ds">
+            <i class="fas fa-chart-line"></i> Data
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who Am <span class="gradient-text">I?</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <div class="about-card glass-card">
+            <p class="about-para">
+              I'm <strong class="highlight">Indushree S Achar</strong>, a passionate tech enthusiast 
+              at the exciting crossroads of <strong class="highlight">Artificial Intelligence</strong>, 
+              <strong class="highlight">Web Development</strong>, and <strong class="highlight">Data Science</strong>.
+            </p>
+            <p class="about-para">
+              As a fresher eager to make my mark in the tech industry, I'm driven by a deep curiosity 
+              to solve real-world problems with intelligent systems. I believe technology should be 
+              both powerful and human-centered.
+            </p>
+            <p class="about-para">
+              I'm committed to <strong class="highlight">continuous learning</strong>, staying at the 
+              cutting edge of ML research, exploring modern web technologies, and transforming raw data 
+              into meaningful insights.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Certificates</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cards" data-aos="fade-left">
+          <div class="interest-card glass-card tilt-card" id="interest-ai">
+            <div class="interest-icon">🤖</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Building models that learn, adapt, and solve complex problems autonomously.</p>
+          </div>
+          <div class="interest-card glass-card tilt-card" id="interest-web">
+            <div class="interest-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Crafting beautiful, responsive, and high-performance web experiences.</p>
+          </div>
+          <div class="interest-card glass-card tilt-card" id="interest-data">
+            <div class="interest-icon">📊</div>
+            <h3>Data Science</h3>
+            <p>Uncovering patterns and insights hidden within complex datasets.</p>
+          </div>
+          <div class="interest-card glass-card tilt-card" id="interest-ml">
+            <div class="interest-icon">🧠</div>
+            <h3>Machine Learning</h3>
+            <p>Training algorithms that transform experience into intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// skill set</span>
+        <h2 class="section-title">My <span class="gradient-text">Arsenal</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid" data-aos="fade-up">
+
+        <div class="skill-category glass-card" id="skill-programming">
+          <div class="skill-cat-header">
+            <i class="fas fa-terminal cat-icon"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85" style="--accent: #3776AB;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-java"></i> Java</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70" style="--accent: #ED8B00;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-code"></i> C</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65" style="--accent: #A8B9CC;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skill-web">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe cat-icon"></i>
+            <h3>Web Dev</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90" style="--accent: #E34F26;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80" style="--accent: #1572B6;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75" style="--accent: #F7DF1E;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skill-tools">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools cat-icon"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-github"></i> GitHub</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80" style="--accent: #6e5494;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-edit"></i> VS Code</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90" style="--accent: #007ACC;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skill-ai">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot cat-icon"></i>
+            <h3>AI / DS</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70" style="--accent: #a855f7;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72" style="--accent: #06b6d4;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Floating tech icons orbit -->
+      <div class="tech-orbit" data-aos="zoom-in">
+        <div class="orbit-center">
+          <i class="fas fa-atom"></i>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-item" style="--angle:0deg"><i class="fab fa-python" title="Python"></i></div>
+          <div class="orbit-item" style="--angle:72deg"><i class="fab fa-js-square" title="JavaScript"></i></div>
+          <div class="orbit-item" style="--angle:144deg"><i class="fab fa-html5" title="HTML5"></i></div>
+          <div class="orbit-item" style="--angle:216deg"><i class="fab fa-github" title="GitHub"></i></div>
+          <div class="orbit-item" style="--angle:288deg"><i class="fas fa-brain" title="ML"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-item" style="--angle:36deg"><i class="fab fa-css3-alt" title="CSS3"></i></div>
+          <div class="orbit-item" style="--angle:108deg"><i class="fab fa-java" title="Java"></i></div>
+          <div class="orbit-item" style="--angle:180deg"><i class="fas fa-database" title="Data"></i></div>
+          <div class="orbit-item" style="--angle:252deg"><i class="fas fa-chart-line" title="Analytics"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// my work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="100" id="proj-covid">
+          <div class="project-img-wrap">
+            <img src="images/project_covid.png" alt="COVID-19 Radiography Detection Model" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">01</div>
+            <h3 class="project-title">COVID-19 Radiography Detection</h3>
+            <p class="project-desc">
+              An AI-powered model that analyzes chest X-ray images to detect COVID-19 infection with high accuracy using deep learning techniques.
+            </p>
+            <div class="project-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">OpenCV</span>
+            </div>
+            <a href="#" class="btn-project" id="proj-covid-btn">
+              <i class="fas fa-arrow-right"></i> View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="200" id="proj-face">
+          <div class="project-img-wrap">
+            <img src="images/project_face.png" alt="Face Recognition System" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">02</div>
+            <h3 class="project-title">Face Recognition System</h3>
+            <p class="project-desc">
+              A real-time face recognition and identification system leveraging computer vision and machine learning for secure biometric authentication.
+            </p>
+            <div class="project-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">face_recognition</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">ML</span>
+            </div>
+            <a href="#" class="btn-project" id="proj-face-btn">
+              <i class="fas fa-arrow-right"></i> View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="300" id="proj-ai-web">
+          <div class="project-img-wrap">
+            <img src="images/project_ai.png" alt="AI Website Generator" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">03</div>
+            <h3 class="project-title">AI Website Generator</h3>
+            <p class="project-desc">
+              An intelligent web application that generates complete websites from natural language descriptions using AI, delivering production-ready code instantly.
+            </p>
+            <div class="project-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">AI API</span>
+            </div>
+            <a href="#" class="btn-project" id="proj-ai-btn">
+              <i class="fas fa-arrow-right"></i> View Project
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// achievements</span>
+        <h2 class="section-title">Certificates & <span class="gradient-text">Achievements</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cert-carousel-wrapper" data-aos="fade-up">
+        <div class="cert-carousel" id="cert-carousel">
+
+          <div class="cert-card glass-card" id="cert-inamigos">
+            <div class="cert-glow"></div>
+            <div class="cert-top">
+              <div class="cert-badge">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-org-badge">InAmigos Foundation</div>
+            </div>
+            <h3 class="cert-title">AI Web Development Internship</h3>
+            <p class="cert-desc">
+              Completed a hands-on internship focusing on building AI-integrated web applications, 
+              gaining real-world experience in modern development workflows.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+              <span class="cert-type"><i class="fas fa-star"></i> Internship</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" id="cert-infosys">
+            <div class="cert-glow"></div>
+            <div class="cert-top">
+              <div class="cert-badge" style="--badge-color: #06b6d4;">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="cert-org-badge" style="--badge-color: #06b6d4;">Infosys</div>
+            </div>
+            <h3 class="cert-title">Introduction to Data Science</h3>
+            <p class="cert-desc">
+              Gained foundational knowledge in Data Science concepts, tools, and methodologies 
+              through Infosys Springboard's structured learning program.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+              <span class="cert-type"><i class="fas fa-star"></i> Certification</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" id="cert-ml">
+            <div class="cert-glow" style="--glow-color: #10b981;"></div>
+            <div class="cert-top">
+              <div class="cert-badge" style="--badge-color: #10b981;">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="cert-org-badge" style="--badge-color: #10b981;">Self Learning</div>
+            </div>
+            <h3 class="cert-title">Machine Learning Fundamentals</h3>
+            <p class="cert-desc">
+              Self-driven mastery of core ML concepts including supervised learning, neural networks, 
+              and model evaluation through hands-on projects.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+              <span class="cert-type"><i class="fas fa-star"></i> Achievement</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="cert-prev" aria-label="Previous certificate">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn" id="cert-next" aria-label="Next certificate">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// get in touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card glass-card">
+            <h3>Ready to Collaborate?</h3>
+            <p>I'm always open to exciting opportunities, internships, and collaborations. Let's build something amazing together!</p>
+
+            <div class="contact-items">
+              <a href="mailto:indushree@email.com" class="contact-item" id="contact-email">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">indushree@email.com</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="contact-item" id="contact-linkedin">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">Connect with me</span>
+                </div>
+              </a>
+              <a href="https://github.com" target="_blank" class="contact-item" id="contact-github">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">View my code</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <div class="form-input-wrap">
+                <i class="fas fa-user form-icon"></i>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email-input" class="form-label">Email Address</label>
+              <div class="form-input-wrap">
+                <i class="fas fa-envelope form-icon"></i>
+                <input type="email" id="contact-email-input" name="email" class="form-input" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <div class="form-input-wrap">
+                <i class="fas fa-comment form-icon textarea-icon"></i>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Your message here..." rows="5" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loader hidden"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <div class="form-success hidden" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        Designed & Built with <span class="heart">❤️</span> by 
+        <span class="footer-name">Indushree S Achar</span>
+      </p>
+      <p class="footer-sub">© 2024 · All Rights Reserved · AI · Web · Data</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
